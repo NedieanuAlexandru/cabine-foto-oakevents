@@ -1,0 +1,43 @@
+<app-starting-page></app-starting-page>
+<br />
+<nav class="navbar">
+  <ul class="navbar nav">
+    <li><a id="home-link" (click)="home()">Home</a></li>
+    <li class="dropdown">
+      <button class="dropbtn" (click)="cabins()">Cabine Foto</button>
+      <div class="dropdown-content">
+        <a href="cabin-models#cab-clasic">Cabina Foto Clasica</a>
+        <a href="cabin-models#cab-vintage">Cabina Foto Vintage</a>
+        <a href="cabin-models#cab-modern">Cabina Foto NewSchool</a>
+      </div>
+    </li>
+    <li><a id="price-link" (click)="pricePacks()">Preturi</a></li>
+    <li id="contact">Contact</li>
+  </ul>
+</nav>
+
+<div class="modal hidden">
+  <button class="close-modal">&times;</button>
+  <h3>Cum ne puteti contacta❓</h3>
+  <br />
+  <p>
+    <span style="color: red; font-weight: 600">Telefon 1:</span> 0747 070 645
+  </p>
+  <p>
+    <span style="color: red; font-weight: 600">Telefon 2:</span> 0745 793 254
+  </p>
+  <p>
+    <span style="color: red; font-weight: 600">Mail:</span>
+    oakevents@yahoo.com
+  </p>
+  <br />
+  <p><span style="color: red; font-weight: 600">Persoane de contact:</span></p>
+  <p>Bălan Paul</p>
+  <p>Negrea Mihaela</p>
+</div>
+
+<div class="overlay hidden">
+  <div class="arrow-modal hidden">
+    <img src="/assets/images/arrow down.png" alt="sorry" id="image-arrow" />
+  </div>
+</div>

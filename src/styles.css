@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: auto;
+  height: 100%;
+  color: #333;
+  background-image: linear-gradient(to top left, #8a868b 0%, #312d2d 100%);
+}

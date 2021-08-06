@@ -1,0 +1,412 @@
+.wrapper-message {
+  width: 60%;
+  margin: auto;
+  border-radius: 5rem;
+  box-shadow: 0 -6px 20px black, inset 0 0 9px white;
+  background-image: linear-gradient(to top left, #86602d 0%, #000000 100%);
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.separator {
+  align-self: center;
+  width: 100%;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border: 0;
+  height: 0.1rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+#theMessage {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 150%;
+  font-weight: 600;
+  color: white;
+  padding-bottom: 0.5rem;
+}
+
+#btn-packs {
+  position: relative;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+  width: 5.3rem;
+  height: 2.3rem;
+  border: none;
+  cursor: pointer;
+  outline: 0;
+  color: #fff;
+  background: #111;
+  z-index: 0;
+  border-radius: 3rem;
+}
+
+.btn-flip {
+  opacity: 1;
+  outline: 0;
+  color: #fff;
+  line-height: 40px;
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+.per-cabin {
+  margin: 0.6rem 0 0 3.6rem;
+}
+.btn-flip:hover:after {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+
+.btn-flip:hover:before {
+  opacity: 0;
+  transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip:after {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  color: #232324;
+  display: block;
+  transition: 0.5s;
+  position: absolute;
+  background: #adadaf;
+  content: attr(data-back);
+  transform: translateY(-50%) rotateX(90deg);
+  border-radius: 5rem;
+}
+
+.btn-flip:before {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  color: #adadaf;
+  display: block;
+  padding: 0 20px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: #383838;
+  content: attr(data-front);
+  transform: translateY(0) rotateX(0);
+  border-radius: 5rem;
+}
+
+.wrapper-content {
+  width: 50%;
+  margin: auto;
+  height: auto;
+  text-align: center;
+}
+
+.cab {
+  width: 100%;
+  background-image: linear-gradient(to top left, #000000 0%, #535756 100%);
+  border: 0.3rem solid transparent;
+  border-radius: 2.2rem;
+  background-clip: padding-box;
+  box-shadow: 0 3px 40px black, inset 0 3px 20px white;
+  margin-bottom: 5%;
+  padding-top: 4%;
+  overflow: hidden;
+}
+
+.wrapper-image {
+  width: 50%;
+  float: left;
+  padding-bottom: 4%;
+}
+
+#image {
+  border-radius: 9px;
+  width: 60%;
+  height: 18rem;
+  box-shadow: 0 0 30px black;
+}
+
+.wrapper-desc {
+  text-align: left;
+  color: white;
+  padding: 0 0 0 0;
+  padding-top: 10%;
+  padding-right: 2%;
+  overflow: hidden;
+}
+
+.wrapper-desc p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 600;
+  font-size: 120%;
+}
+
+.wrapper-clip {
+  position: relative;
+  padding-bottom: 68%;
+  height: 0;
+}
+
+#clip {
+  box-shadow: 0 0 40px black;
+  border-radius: 2rem;
+}
+
+/* Extra small devices */
+@media screen and (max-width: 600px) {
+  .wrapper-message {
+    width: 80%;
+  }
+  #theMessage {
+    font-size: 80%;
+  }
+  .btn-flip {
+    line-height: 20px;
+  }
+
+  .btn-flip:before {
+    line-height: 25px;
+  }
+
+  .wrapper-content {
+    width: 80%;
+  }
+
+  .wrapper-image {
+    padding-bottom: 15%;
+  }
+
+  #image {
+    width: 70%;
+    height: 15rem;
+  }
+
+  .wrapper-desc p {
+    font-size: 100%;
+  }
+
+  .wrapper-clip {
+    padding-bottom: 68%;
+    height: 0;
+  }
+
+  #clip {
+    width: 350px;
+    height: 200px;
+    box-shadow: 0 0 40px black;
+    border-radius: 2rem;
+  }
+
+  .per-cabin {
+    margin: 0.6rem 0 0 1rem;
+  }
+}
+
+/* Small devices */
+@media screen and (min-width: 600px) {
+  .wrapper-message {
+    width: 80%;
+  }
+  #theMessage {
+    font-size: 90%;
+  }
+  .btn-flip {
+    line-height: 30px;
+  }
+
+  .btn-flip:before {
+    line-height: 30px;
+  }
+
+  .wrapper-content {
+    width: 80%;
+  }
+
+  .wrapper-image {
+    padding-bottom: 6%;
+  }
+
+  #image {
+    width: 70%;
+    height: 17rem;
+  }
+
+  .wrapper-desc p {
+    font-size: 110%;
+  }
+
+  .wrapper-clip {
+    padding-bottom: 68%;
+    height: 0;
+  }
+
+  #clip {
+    width: 420px;
+    height: 240px;
+    box-shadow: 0 0 40px black;
+    border-radius: 2rem;
+  }
+
+  .per-cabin {
+    margin: 0.6rem 0 0 2rem;
+  }
+}
+
+/* Medium devices */
+@media screen and (min-width: 768px) {
+  .wrapper-message {
+    width: 60%;
+  }
+  #theMessage {
+    font-size: 100%;
+  }
+  .btn-flip {
+    line-height: 35px;
+  }
+
+  .btn-flip:before {
+    line-height: 35px;
+  }
+
+  .wrapper-content {
+    width: 60%;
+  }
+
+  .wrapper-image {
+    padding-bottom: 7%;
+  }
+
+  #image {
+    width: 60%;
+    height: 16rem;
+  }
+
+  .wrapper-desc p {
+    font-size: 110%;
+  }
+
+  .wrapper-clip {
+    padding-bottom: 68%;
+    height: 0;
+  }
+
+  #clip {
+    width: 420px;
+    height: 240px;
+    box-shadow: 0 0 40px black;
+    border-radius: 2rem;
+  }
+
+  .per-cabin {
+    margin: 0.6rem 0 0 3rem;
+  }
+}
+
+/* Large devices */
+@media screen and (min-width: 992px) {
+  .wrapper-message {
+    width: 60%;
+  }
+  #theMessage {
+    font-size: 120%;
+  }
+  .btn-flip {
+    line-height: 40px;
+  }
+
+  .btn-flip:before {
+    line-height: 40px;
+  }
+
+  .wrapper-content {
+    width: 60%;
+  }
+
+  .wrapper-image {
+    padding-bottom: 7%;
+  }
+
+  #image {
+    width: 60%;
+    height: 18rem;
+  }
+
+  .wrapper-desc p {
+    font-size: 120%;
+  }
+
+  .wrapper-clip {
+    padding-bottom: 68%;
+    height: 0;
+  }
+
+  #clip {
+    width: 508px;
+    height: 290px;
+    box-shadow: 0 0 40px black;
+    border-radius: 2rem;
+  }
+
+  .per-cabin {
+    margin: 0.6rem 0 0 4rem;
+  }
+}
+
+/* Extra large devices */
+@media screen and (min-width: 1200px) {
+  .wrapper-message {
+    width: 50%;
+  }
+  #theMessage {
+    font-size: 120%;
+  }
+  .btn-flip {
+    line-height: 40px;
+  }
+
+  .btn-flip:before {
+    line-height: 40px;
+  }
+
+  .wrapper-content {
+    width: 50%;
+  }
+
+  .wrapper-image {
+    padding-bottom: 7%;
+  }
+
+  #image {
+    width: 60%;
+    height: 18rem;
+  }
+
+  .wrapper-desc p {
+    font-size: 120%;
+  }
+
+  .wrapper-clip {
+    padding-bottom: 68%;
+    height: 0;
+  }
+
+  #clip {
+    width: 508px;
+    height: 290px;
+    box-shadow: 0 0 40px black;
+    border-radius: 2rem;
+  }
+
+  .per-cabin {
+    margin: 0.6rem 0 0 4rem;
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Nedieanu Mihai-Alexandru" />
+    <meta
+      name="keywords"
+      content="cabina, foto, cabina foto, cabina foto de vanzare, cabina foto vintage, cabina foto retro, cabina foto la comanda, cabina foto comanda, cabina oglinda vintage, cabina oglinda retro, cabina oglinda, cabina oglinda vanzare, vanzare cabine foto, cabine foto reducere, black friday cabine foto, cabine foto black friday, cabine foto romania, cabine foto calitate"
+    />
+    <meta
+      name="description"
+      content="Cabine Foto by OakEvents - Producem cabine foto de inalta calitate. Cabine foto de vanzare."
+    />
+    <title>CabineFotoOakEvents</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <app-root></app-root>
+    <!-- Slider buttons prev/next -->
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>
